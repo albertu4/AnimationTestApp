@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-0q-Yti" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="70" y="680.5" width="274" height="38"/>
+                                <rect key="frame" x="60" y="680.5" width="294" height="38"/>
                                 <color key="backgroundColor" systemColor="tintColor"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXN-vZ-ccl" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="70" y="144" width="274" height="200"/>
+                                <rect key="frame" x="60" y="144" width="294" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Ya-j6-9Xl">
                                         <rect key="frame" x="10" y="9" width="65.5" height="182.5"/>
@@ -79,11 +79,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yXN-vZ-ccl" secondAttribute="trailing" constant="70" id="KPf-Kg-u9u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yXN-vZ-ccl" secondAttribute="trailing" constant="60" id="KPf-Kg-u9u"/>
                             <constraint firstItem="yXN-vZ-ccl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="T3f-vt-80e"/>
                             <constraint firstItem="eAt-0q-Yti" firstAttribute="width" secondItem="yXN-vZ-ccl" secondAttribute="width" id="W1J-nG-qDJ"/>
                             <constraint firstItem="eAt-0q-Yti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fG7-Eo-mYK"/>
-                            <constraint firstItem="yXN-vZ-ccl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="sWa-z5-5fF"/>
+                            <constraint firstItem="yXN-vZ-ccl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="sWa-z5-5fF"/>
                             <constraint firstItem="yXN-vZ-ccl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v8t-vp-3qm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eAt-0q-Yti" secondAttribute="bottom" multiplier="1.2" id="yUQ-lY-hYU"/>
                         </constraints>
