@@ -13,9 +13,20 @@ class AnimationTestViewController: UIViewController {
 
     @IBOutlet var animationView: SpringView!
     
+    @IBOutlet var presetLabel: UILabel!
+    @IBOutlet var curveLabel: UILabel!
+    @IBOutlet var forceLabel: UILabel!
+    @IBOutlet var durationLabel: UILabel!
+    @IBOutlet var delayLabel: UILabel!
+    
+    @IBOutlet var animationStartButton: SpringButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        animationView.layer.cornerRadius = 10
+        animationStartButton.layer.cornerRadius = 10
+        
+        animationStartButton.setTitle(animation.preset, for: .normal)
     }
 
     @IBAction func startAnimationButton(_ sender: SpringButton) {
@@ -24,14 +35,24 @@ class AnimationTestViewController: UIViewController {
         animationView.force = CGFloat(animation.force)
         animationView.duration = CGFloat(animation.duration)
         animationView.delay = CGFloat(animation.delay)
+        changeLabelText()
         animationView.animate()
         
+        animation = Animation.getAnimation()
+        
         sender.animation = "pop"
-        sender.force = 0.1
+        sender.setTitle(animation.preset, for: .normal)
         sender.animate()
         
-        animation = Animation.getAnimation()
+        
     }
     
+    private func changeLabelText() {
+        presetLabel.text = "Preset: \(animation.preset)"
+        curveLabel.text = "Curve: \(animation.curve)"
+        forceLabel.text = "Force: \(String(format: "%.2f", animation.force))"
+        durationLabel.text = "Duration: \(String(format: "%.2f", animation.duration))"
+        delayLabel.text = "Delay: \(String(format: "%.2f", animation.duration))"
+    }
 }
 
