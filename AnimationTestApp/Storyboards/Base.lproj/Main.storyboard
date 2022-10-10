@@ -26,7 +26,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="startAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0w-b7-MK8"/>
+                                    <action selector="startAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="muQ-OY-n74"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXN-vZ-ccl" customClass="SpringView" customModule="Spring">
